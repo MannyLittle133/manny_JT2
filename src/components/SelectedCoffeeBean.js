@@ -3,10 +3,11 @@ import { useCoffeeContext } from '../context/CoffeeContext';
 
 
 const SelectedCoffeeBean = () => {
+  const { coffeeBean } = useCoffeeContext()
   return (
     <div className="selected-coffee">
       <h2>
-        <SelectedCoffeeBean/> 
+        {coffeeBean.name}
       </h2>
     </div>
   )
